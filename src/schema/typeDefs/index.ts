@@ -1,5 +1,5 @@
 export const typeDefs = `
 type Query {
-    hello : String
+    ask_aQuestion(question:String) : String
 }
 `;
