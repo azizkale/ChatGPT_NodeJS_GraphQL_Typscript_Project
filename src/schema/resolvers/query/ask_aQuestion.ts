@@ -1,11 +1,8 @@
-import openai from "openai-node";
 import { Configuration, OpenAIApi } from "openai";
-
-openai.api_key = "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";
 
 export const ask_aQuestion = async (_: any, args: any, context: any) => {
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: process.env.OPENAI_API_KEY,
   });
 
   const openai = new OpenAIApi(configuration);
