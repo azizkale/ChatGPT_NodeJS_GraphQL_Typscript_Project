@@ -16,7 +16,6 @@ export const ask_aQuestion = async (_: any, args: any, context: any) => {
   let theAnswer;
   await completion.then(async (r) => {
     theAnswer = await r.data.choices[0].text;
-    console.info(r.data.choices[0].text);
   });
 
   return theAnswer;
