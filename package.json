@@ -6,7 +6,8 @@
     "scripts": {
         "test": "mocha tests/unit/",
         "dev": "nodemon src/index.ts",
-        "start": "node src/index.ts"
+        "start": "node src/index.ts",
+         "build": "tsc && tslint --project tsconfig.json --fix"
     },
     "keywords": [],
     "author": "azizkale",
