@@ -8,7 +8,7 @@ export const correctGrammer = async (_: any, args: any, context: any) => {
 
   const completion = await openai.createCompletion({
     model: "text-davinci-003",
-    prompt: "Correct this to standard English: " + args.sentence,
+    prompt: "Correct this to standard" + args.language + ": " + args.sentence,
     temperature: 0,
     max_tokens: 60,
     top_p: 1.0,
