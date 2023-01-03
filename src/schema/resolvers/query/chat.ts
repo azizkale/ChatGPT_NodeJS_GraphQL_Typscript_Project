@@ -1,6 +1,6 @@
 import { Configuration, OpenAIApi } from "openai";
 
-export const ask_aQuestion = async (_: any, args: any, context: any) => {
+export const chat = async (_: any, args: any, context: any) => {
   const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
   });

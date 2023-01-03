@@ -1,6 +1,7 @@
 export const typeDefs = `
 type Query {
-    ask_aQuestion(question:String) : String
+    chat(question:String) : String
     correctGrammer(language: String, sentence: String): String
+    translate(text:String, language:String):String
 }
 `;
