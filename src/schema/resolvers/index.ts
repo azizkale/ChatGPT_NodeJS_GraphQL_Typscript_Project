@@ -1,9 +1,9 @@
-import { ask_aQuestion } from "./query/ask_aQuestion";
+import { chat } from "./query/chat";
 import { correctGrammer } from "./query/grammer";
 
 export const resolvers = {
   Query: {
-    ask_aQuestion: ask_aQuestion,
+    chat: chat,
     correctGrammer: correctGrammer,
   },
   // Mutation: {},
