@@ -9,8 +9,13 @@ export const chat = async (_: any, args: any, context: any) => {
 
   const completion = openai.createCompletion({
     model: "text-davinci-003",
-    prompt: args.question,
-    max_tokens: 1000,
+    prompt: "\n\nHuman :" + args.question + "\n\nAI:",
+    temperature: 0.9,
+    max_tokens: 150,
+    top_p: 1,
+    frequency_penalty: 0,
+    presence_penalty: 0.6,
+    stop: [" Human:", " AI:"],
   });
 
   let theAnswer;
